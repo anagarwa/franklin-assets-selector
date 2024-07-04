@@ -4,5 +4,4 @@ indices:
     properties:
       polaris-assets:
         select: img
-        values: |
-          match(attribute(el, 'src'), 'https:\/\/[^\/]+\/adobe\/assets\/urn:aaid:aem:.*')
+        values: attribute(el, "src")
